@@ -2,7 +2,6 @@
 ## How to install
 - Get a cup of coffee & some nicotines
 - Create .env file
-- Pull sub-modules
 - Run command "composer i"
 - Run command "npm i"
 - Run command "npm run dev"
@@ -12,25 +11,17 @@
 - Add deploy key
 - Create ssh config
 - Pull project
-- Override sub modules url (.gitmodules)
 - Install
 
+## Troubleshoot
+##### The unauthenticated git protocol on port 9418 is no longer supported
+
+```
+git config --global url."https://".insteadOf git://
+```
+
+
 ## Related
-#### Sub Modules
-* [Landing Page](https://github.com/KMI-UNS-2021-X-CMS/Polres-Landing_page.git)
-
-#### Pull sub-modules via cli
-```bash
- git submodule
- git submodule update --init --recursive
-```
-
-#### Override sub-module
-```
-[submodule "name"]
-          path = directory/mysubmodule
-          url = git@github-sub-module.com:user/repository
-```
 
 #### SSH config sample
 ```
